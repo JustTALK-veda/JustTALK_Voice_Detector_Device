@@ -1,7 +1,7 @@
 # DeviceDriver
 Device Driver for STM32 Board Control
 
-STM32 : STM32CubeIDE를 통해 STM32 NUCLEO F401RE 보드로 build 및 run 실행을 위한 디렉토리 
+STM32 : STM32CubeIDE를 통해 STM32 NUCLEO F401RE 보드로 firmware를 build 및 run 실행을 위한 디렉토리 
 
 driver : 디바이스 드라이버의 소스코드
 
