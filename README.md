@@ -1,6 +1,8 @@
 # DeviceDriver
 Device Driver for STM32 Board Control
 
+stm32 : STM32CubeIDE를 통해 STM32 NUCLEO F401RE 보드로 build 및 run 실행 
+
 setup.sh : 한번만 실행하면 됨 
     재부팅마다 디바이스 트리와 드라이버 자동 설치 및 연결 진행
 
