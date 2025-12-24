@@ -37,7 +37,7 @@ sudo apt install -y libasound2-dev libkissfft-dev
 
 
 echo "||||||[4/5] 사용자 앱 컴파일||||||"
-gcc test/jstdev_app.c -o jstdev_app -lasound -lkissfft-float -lm
+gcc app/jstdev_app.c -o jstdev_app -lasound -lkissfft-float -lm
 
 
 echo "||||||[5/5] 설치 완료, 재부팅 후 정상적으로 사용 가능합니다||||||"
