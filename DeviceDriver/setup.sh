@@ -23,9 +23,10 @@ fi
 echo "||||||[2/5] Device Driver Module 빌드 및 설치||||||"
 #드라이버 모듈 생성
 make -C driver  
-#모듈 자동 로드 설정
+#모듈 자동 로드 설정 및 의존성 확인 -> modalias
 sudo cp driver/jstdev_module.ko /lib/modules/$(uname -r)/kernel/drivers/misc/
 sudo depmod
+#디바이스에 상관없이 로드될 수 있도록 설정
 echo "jstdev_module" | sudo tee /etc/modules-load.d/jstdev_module.conf > /dev/null
 #노드 자동 권한 부여
 echo 'KERNEL=="jstdev", MODE="0666"' | sudo tee /etc/udev/rules.d/99-jstdev.rules > /dev/null
