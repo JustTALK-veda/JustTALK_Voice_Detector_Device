@@ -3,7 +3,7 @@ Device Driver for STM32 Board Control
 <img width="339" height="272" alt="image" src="https://github.com/user-attachments/assets/2fbc38c9-ff2b-4f0f-868e-a82b1ff6a902" />
 
 + DeviceDriver : RaspberryPi 4에서의 디바이스 동작 설정을 위한 디렉토리
-    + app : 드라이버 사용 예시
+    + app : 드라이버 사용을 위한 예시 프로그램
         + jstdev_app.c
           ```      
             fd = open("/dev/jstdev", O_RDONLY); 
