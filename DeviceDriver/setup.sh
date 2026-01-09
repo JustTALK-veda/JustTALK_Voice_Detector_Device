@@ -32,7 +32,7 @@ echo "jstdev_module" | sudo tee /etc/modules-load.d/jstdev_module.conf > /dev/nu
 echo 'KERNEL=="jstdev", MODE="0666"' | sudo tee /etc/udev/rules.d/99-jstdev.rules > /dev/null
 
 
-echo "||||||[3/5] asound2 및 kissfft 설치||||||"
+echo "||||||[3/5] kissfft 설치||||||"
 #kissfft 설치
 sudo apt install -y libasound2-dev libkissfft-dev
 
