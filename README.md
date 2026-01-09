@@ -32,17 +32,14 @@ Device Driver for STM32 Board Control
         + jstdev_module.c 
     + dtoverlay : JustTALK 디바이스 등록을 위한 dts 오버레이 소스코드
         + jstdev-overlay.dts 
-    + setup.sh     
+    + setup.sh
+      ```
+        한번 실행하여 driver, dtoverlay에 필요한 부분 설치 진행
+        디바이스 트리 오버레이 컴파일 및 부팅 시 자동 로드 설정
+        디바이스 드라이버 모듈 빌드 및 설치 (재부팅마다 디바이스 트리와 드라이버 자동 설치 및 연결 진행)
+        유저 프로그램에 필요한 라이브러리 설치
+        음성 방향 탐지 예제 프로그램(jstdev_app.c) 컴파일
+      ```    
 + STM32 : STM32CubeIDE를 통해 STM32 NUCLEO F401RE 보드로 firmware를 build 및 run 실행을 위한 디렉토리
 
 
-setup.sh : 한번 실행하여 driver, dtoverlay에 필요한 부분 설치 진행
-    재부팅마다 디바이스 트리와 드라이버 자동 설치 및 연결 진행
-
-
-main 흐름
-
- 
-    
-
-               
